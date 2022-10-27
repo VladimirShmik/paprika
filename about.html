@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paprika</title>
+    <link rel="stylesheet" href="./scss/swiper-bundle.css">
+    <link rel="stylesheet" href="./scss/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="header-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-wrapper">
+                        <a href="#" class="header-link d-lg-flex  d-none">
+                            <img src="./img/icons/inst-icon.png" alt="" class="header-link__img">
+                            <p class="header-link__text">paprika_uralsk</p>
+                        </a>
+                        <div class="dropdown">
+                            <a class="header-link dropdown-toggle" type="button" id="dropdownMenuButto1"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/icons/phone-icon.png" alt="" class="header-link__img">
+                                <p class="header-link__text">+7 (708) 703-77-37</p>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                <a class="dropdown-item" href="#">Позвонить нам</a>
+                                <a class="dropdown-item" href="#">Написать в WhatsApp</a>
+                            </div>
+                        </div>
+                        <a href="#" class="header-link d-lg-flex justify-content-center d-none">
+                            <img src="./img/icons/delivery-icon.png" alt="" class="header-link__img">
+                            <p class="header-link__text">без выходных с 10:00 до 20:00</p>
+                        </a>
+                        <div class="dropdown authorization d-flex justify-content-end me-3">
+                            <a class="header-link dropdown-toggle" type="button" id="dropdownMenuButton2"
+                               data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                <img src="./img/icons/account-icon.png" alt="" class="header-link__img">
+                                <p class="header-link__text">мой аккаунт</p>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-home" type="button" role="tab"
+                                                aria-controls="nav-home" aria-selected="true">Автозирация
+                                        </button>
+                                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-profile" type="button" role="tab"
+                                                aria-controls="nav-profile" aria-selected="false">Регистрация
+                                        </button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                         aria-labelledby="nav-home-tab">
+                                        <form action="#" class="auth-container">
+                                            <fieldset class="auth-form mb-2">
+                                                <img src="./img/icons/phone-icon.png" alt="" class="auth-form__img">
+                                                <input type="number" class="auth-form__input"
+                                                       placeholder="Номер телефона">
+                                            </fieldset>
+                                            <fieldset class="auth-form mb-3">
+                                                <img src="./img/icons/password-icon.png" alt="" class="auth-form__img">
+                                                <input type="password" class="auth-form__input" placeholder="Пароль">
+                                            </fieldset>
+                                            <button class="auth-container__btn" type="submit">Войти</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                         aria-labelledby="nav-profile-tab">
+                                        <form action="#" class="auth-container">
+                                            <fieldset class="auth-form mb-3">
+                                                <img src="./img/icons/phone-icon.png" alt="" class="auth-form__img">
+                                                <input type="number" class="auth-form__input"
+                                                       placeholder="Номер телефона">
+                                            </fieldset>
+                                            <button class="auth-container__btn" type="submit">Войти</button>
+                                        </form>
+                                        <!--<div class="done-block">
+                                            <p class="done-block__done">Вы зарегистрированы!</p>
+                                            <p class="done-block__text">Проверьте SMS-сообщения, мы отправили вам уникальный пароль.</p>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-group">
+                    <a href="" class="header-logo">
+                        <img src="./img/icons/logo.png" alt="" class="header-logo__img">
+                        <p class="header-logo__text">магазин свежих продуктов</p>
+                    </a>
+                    <form class="header-search">
+                        <input type="text" class="header-search__input" placeholder="Хочу что-нибудь вкусненькое...">
+                        <button class="search-btn" type="submit">
+                            <img src="./img/icons/search-icon.png" alt="" class="search-btn__icon">
+                            <p class="search-btn__text">ИЩЕМ</p>
+                        </button>
+                    </form>
+                    <div class="basket-container">
+                        <div class="dropdown ">
+                            <button class="basket-btn dropdown-toggle" type="button" id="basket"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                <img src="./img/icons/basket-icon.png" alt="" class="basket-btn__img">
+                                <span class="basket-btn__number">13</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="basket">
+                                <li class="basket-item">
+                                    <img src="./img/slider-products/products-img-2.png" alt="" class="basket-item__img">
+                                    <div class="basket-box">
+                                        <p class="basket-box__name">Авокадо</p>
+                                        <p class="basket-box__price">850 тенге</p>
+                                    </div>
+                                    <div class="products-box mb-0">
+                                        <button class="products-box__minus">
+                                            -
+                                        </button>
+                                        <span class="products-box__number">1 шт</span>
+                                        <button class="products-box__plus">
+                                            +
+                                        </button>
+                                    </div>
+                                    <button class="basket-item__cancel">x</button>
+                                </li>
+                                <li class="basket-item">
+                                    <img src="./img/slider-products/products-img-2.png" alt="" class="basket-item__img">
+                                    <div class="basket-box">
+                                        <p class="basket-box__name">Авокадо</p>
+                                        <p class="basket-box__price">850 тенге</p>
+                                    </div>
+                                    <div class="products-box mb-0">
+                                        <button class="products-box__minus">
+                                            -
+                                        </button>
+                                        <span class="products-box__number">1 шт</span>
+                                        <button class="products-box__plus">
+                                            +
+                                        </button>
+                                    </div>
+                                    <button class="basket-item__cancel">x</button>
+                                </li>
+                                <li class="basket-item">
+                                    <img src="./img/slider-products/products-img-2.png" alt="" class="basket-item__img">
+                                    <div class="basket-box">
+                                        <p class="basket-box__name">Авокадо</p>
+                                        <p class="basket-box__price">850 тенге</p>
+                                    </div>
+                                    <div class="products-box mb-0">
+                                        <button class="products-box__minus">
+                                            -
+                                        </button>
+                                        <span class="products-box__number">1 шт</span>
+                                        <button class="products-box__plus">
+                                            +
+                                        </button>
+                                    </div>
+                                    <button class="basket-item__cancel">x</button>
+                                </li>
+                                <li>
+                                    <a href="#" class="basket-link">
+                                        оформить заказ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="basket-block">
+                            <p class="basket-block__text">корзина</p>
+                            <p class="basket-block__price">1.200 тенге</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-bg">
+        <div class="container ms-0 me-0 ms-xl-auto me-xl-auto ps-0 ps-xl-auto pe-0 pe-xl-auto">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-container">
+                        <div class="dropdown menu-dropdown d-none d-lg-block">
+                            <button class="dropdown-toggle  drop-cat-btn" type="button" id="menuBtn"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Ассортимент
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="menuBtn">
+                                <div class="dropdown-row">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/vegetable-icon.png" alt="" class="dropdown-item__img">
+                                            овощи
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/fruit-icon.png" alt="" class="dropdown-item__img">
+                                            фрукты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/mushrooms-icon.png" alt="" class="dropdown-item__img">
+                                            зелень и грибы</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/ekz-fruit-icon.png" alt="" class="dropdown-item__img">
+                                            экзотические фрукты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/berry-icon.png" alt="" class="dropdown-item__img">
+                                            ягоды</a>
+                                    </li>
+
+                                </div>
+                                <div class="dropdown-row">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/dried-fruits-icon.png" alt=""
+                                                 class="dropdown-item__img">
+                                            сухофрукты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/jar-icon.png" alt="" class="dropdown-item__img">
+                                            мед</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/spices-icon.png" alt="" class="dropdown-item__img">
+                                            пряности</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/drunk-icon.png" alt="" class="dropdown-item__img">
+                                            напитки</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/grocery-icon.png" alt="" class="dropdown-item__img">
+                                            бакалея</a>
+                                    </li>
+                                </div>
+                                <div class="dropdown-row">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/products-icon.png" alt="" class="dropdown-item__img">
+                                            полуфабрикаты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/crab-icon.png" alt="" class="dropdown-item__img">
+                                            морепродукты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/hoz-icon.png" alt="" class="dropdown-item__img">
+                                            хозтовары</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!--mobile-menu-category-->
+                        <button class="btn btn-category" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            Ассортимент
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                             aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header offcanvas-header--category">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body offcanvas-body--category">
+                                <ul class="menu-category">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/vegetable-icon.png" alt="" class="dropdown-item__img">
+                                            овощи
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/fruit-icon.png" alt="" class="dropdown-item__img">
+                                            фрукты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/mushrooms-icon.png" alt="" class="dropdown-item__img">
+                                            зелень и грибы</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/ekz-fruit-icon.png" alt="" class="dropdown-item__img">
+                                            экзотические фрукты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/berry-icon.png" alt="" class="dropdown-item__img">
+                                            ягоды</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/dried-fruits-icon.png" alt=""
+                                                 class="dropdown-item__img">
+                                            сухофрукты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/jar-icon.png" alt="" class="dropdown-item__img">
+                                            мед</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/spices-icon.png" alt="" class="dropdown-item__img">
+                                            пряности</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/drunk-icon.png" alt="" class="dropdown-item__img">
+                                            напитки</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/grocery-icon.png" alt="" class="dropdown-item__img">
+                                            бакалея</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/products-icon.png" alt="" class="dropdown-item__img">
+                                            полуфабрикаты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/crab-icon.png" alt="" class="dropdown-item__img">
+                                            морепродукты</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./img/icons/hoz-icon.png" alt="" class="dropdown-item__img">
+                                            хозтовары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav class="nav-menu">
+                            <li class="nav-item"><a href="#" class="nav-link">новинки</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">хит</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">местная ферма</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">манибэк %</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">доставка и оплата</a></li>
+                        </nav>
+                        <!--mobile-main-menu-->
+                        <button class="btn btn-mobile" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                             aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header offcanvas-header--main">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body offcanvas-body--main">
+                                <nav class="nav-menu-mobile">
+                                    <li class="nav-item"><a href="#" class="nav-link">новинки</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">хит</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">местная ферма</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">манибэк %</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">доставка и оплата</a></li>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main mt-60">
+    <section class="container ">
+        <div class="row">
+            <div class="col-12 col-lg-7 order-2 order-lg-1">
+                <div class="map-container">
+                    <img src="./img/icons/map-img.png" alt="" class="map-container__img">
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="contacts-container">
+                    <h2 class="contacts-container__title">Контакты</h2>
+                    <div class="contacts-grid">
+                        <div class="contacts-item">
+                            <p class="contacts-item__text">Позвонить</p>
+                            <a href="" class="contacts-item__link">+7 (708) 703-77-37</a>
+                        </div>
+                        <div class="contacts-item">
+                            <p class="contacts-item__text">Написать</p>
+                            <a href="" class="contacts-item__link">WhatsApp</a>
+                        </div>
+                        <div class="contacts-item">
+                            <p class="contacts-item__text">Приехать</p>
+                            <a href="" class="contacts-item__link contacts-item__link--2">
+                                улица Шолохова, 64
+                                <p class="contacts-item__small">(мкр. «Строитель», в одном здании с кафе
+                                    «Гурман»)</p>
+                            </a>
+                        </div>
+                        <div class="contacts-item">
+                            <p class="contacts-item__text">Работаем</p>
+                            <a href="" class="contacts-item__link">10:00-20:00 без выходных</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <div class="border-container">
+                    <h2 class="border-container__title">Оплата и доставка</h2>
+                    <div class="border-grid">
+                        <div class="border-block">
+                            <p class="border-block__title">Как оплатить?</p>
+                            <div class="border-wrapper">
+                                <div class="border-item">
+                                    <img src="./img/icons/cash-icon.png" alt="" class="border-item__img">
+                                    <p class="border-item__text border-item__text--border">Наличными</p>
+                                </div>
+                                <div class="border-item">
+                                    <img src="./img/icons/card-icon.png" alt="" class="border-item__img">
+                                    <div class="border-box">
+                                        <p class="border-item__text border-item__text--border">Банковской картой
+                                            курьеру</p>
+                                        <p class="border-box__text">Kaspi QR</p>
+                                    </div>
+                                </div>
+                                <div class="border-item">
+                                    <img src="./img/icons/time-icon.png" alt="" class="border-item__img">
+                                    <p class="border-item__text border-item__text--border">Частичный перевод +
+                                        расчет наличными</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-block">
+                            <p class="border-block__title">Когда доставят?</p>
+                            <div class="border-wrapper">
+                                <div class="border-box">
+                                    <p class="border-item__text ps-0">с 12 до 16 часов</p>
+                                    <p class="border-box__text ps-0"> при заказе до 11 утра</p>
+                                </div>
+                                <div class="border-box">
+                                    <p class="border-item__text ps-0">с 17 до 21 часов</p>
+                                    <p class="border-box__text ps-0">при заказе до 16 часов</p>
+                                </div>
+                                <p class="border-block__delivery">Доставка работает с понедельника
+                                    по субботу. <span class="border-block__span">В воскресенье – выходной. </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="border-container">
+                    <h2 class="border-container__title">Гарантия качества</h2>
+                    <div class="border-text">
+                        <p class="border-text__text">Что делать, если доставленный товар не соответствует вашим
+                            ожиданиям - испорченный, помятый, или недозрелый? Для нас важно, чтобы вы были довольны,
+                            поэтому <span class="border-text__span">мы всегда открыты для обратной связи.</span></p>
+                        <p class="border-text__text"><span class="border-text__span">В течение суток</span> после
+                            получения вы можете связаться с нами по телефону и сообщить, что с заказом что-то не так.
+                            Если наши сотрудники действительно допустили ошибку, и вы получили некачественный товар, мы
+                            вернем деньги, либо заменим его.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="cashback-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cashback-wrapper">
+                            <h2 class="cashback-wrapper__title">Манибэк</h2>
+                            <p class="cashback-wrapper__text">Всем зарегистрированным пользователям сайта paprika.red
+                                предоставляется кэшбэк 3% от суммы покупки.
+                                Кэшбэк накапливается в виде баллов, которой можно покрывать часть или всю сумму в
+                                корзине.
+                                Это можно сделать только онлайн при совершении заказа.
+                                Посмотреть сколько у вас накопилось баллов, можно в личном кабинете.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="organization-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="organization-wrapper">
+                            <h2 class="organization-wrapper__title">Организациям (B2B)</h2>
+                            <div class="organization-block">
+                                <p class="organization-block__text">Мы работаем с <span
+                                        class="organization-block__span"> барами, ресторанами, столовыми, сервисами доставки</span>
+                                    и другими предприятиями, которые нуждаются в качественных и свежих продуктах.
+                                </p>
+                                <p class="organization-block__text"> Чтобы купить продукты, просто добавьте желаемые
+                                    товары в корзину, указав их количество, и выберите удобное время доставки. После
+                                    оформления заказа, с Вами свяжется менеджер нашего магазина, чтобы уточнить
+                                    детали.</p>
+                                <p class="organization-block__text"><span class="organization-block__span">Оплата для организаций</span>
+                                    возможна как за наличный, так и безналичный расчет с предоставлением документов
+                                    и счет-фактуры. Всю дополнительную информацию Вы сможете получить, связавшись с
+                                    нами по телефону, указанному на сайте.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="footer-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-container">
+                            <div class="footer-logo">
+                                <a href="" class="header-logo">
+                                    <img src="./img/icons/logo.png" alt="" class="header-logo__img">
+                                    <p class="header-logo__text">магазин свежих продуктов</p>
+                                </a>
+                            </div>
+                            <div class="footer-nav footer-nav--1">
+                                <a href="#" class="footer-nav__link">ОПЛАТА И ДОСТАВКА</a>
+                                <a href="#" class="footer-nav__link">ГАРАНТИЯ КАЧЕСТВА</a>
+                            </div>
+                            <div class="footer-nav footer-nav--2">
+                                <a href="#" class="footer-nav__link">ОРГАНИЗАЦИЯМ</a>
+                                <a href="#" class="footer-nav__link">КОНТАКТЫ</a>
+                            </div>
+                            <div class="footer-contacts">
+                                <a href="#" class="footer-block">
+                                    <img src="./img/icons/geo-icon.png" alt="" class="footer-block__img">
+                                    <p class="footer-block__text">Шолохова, 64 (мкр. "Строитель")</p>
+                                </a>
+                                <a href="#" class="footer-block">
+                                    <img src="./img/icons/geo-icon.png" alt="" class="footer-block__img">
+                                    <p class="footer-block__text">C. Датова, 8 (ост. Детсад)</p>
+                                </a>
+                                <a href="#" class="footer-block">
+                                    <img src="./img/icons/phone-footer-icon.png" alt="" class="footer-block__img">
+                                    <p class="footer-block__text">+7 (708) 703-77-37</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="./js/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>

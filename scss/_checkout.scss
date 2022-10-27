@@ -1,0 +1,136 @@
+/*checkout-page*/
+.goods-block--2 {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    display: grid;
+    grid-row-gap: 15px;
+  }
+}
+
+.form-check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  .form-check-input:checked + .form-check-label {
+    color: #528413;
+  }
+}
+
+.form-check-input {
+  margin-top: -0.15em;
+  border: 1px solid #d4d4d4;
+}
+
+.form-check-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c9c9c9;
+}
+
+.form-check-input:checked[type=radio] {
+  background-color: #528413;
+  border-color: #528413;
+  background-image: none;
+  box-shadow: none;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 20px;
+  }
+}
+
+.form-select {
+  width: 230px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #528413;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+
+  }
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 20px;
+
+  }
+}
+
+.form-textarea {
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  width: 100%;
+  height: 100px;
+  padding: 15px 10px;
+  resize: none;
+}
+
+.submit-container {
+  display: flex;
+  align-items: flex-start;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    display: grid;
+    grid-row-gap: 15px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #d12c30;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    @media (min-width: 320px) and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+}
+
+.submit-box {
+  position: relative;
+
+  &__text {
+    background-color: #c9c9c9;
+    border-radius: 5px;
+    padding: 15px 20px;
+    max-width: 430px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    @media (min-width: 320px) and (max-width: 1023px) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,273 @@
+/*about-page*/
+.map-container {
+  &__img {
+    width: 100%;
+    max-height: 330px;
+  }
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #528413;
+    margin-bottom: 15px;
+  }
+}
+
+.contacts-grid {
+  display: grid;
+  grid-row-gap: 30px;
+  grid-template-rows: repeat(4, 45px);
+  @media (min-width: 320px) and (max-width: 1023px) {
+    grid-row-gap: 30px;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.contacts-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+
+  align-items: center;
+  grid-column-gap: 10px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 500;
+    border-right: 1px solid #9d9d9d;
+    color: #555555;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @media (min-width: 320px) and (max-width: 1023px) {
+      display: none;
+    }
+
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 400;
+    color: #555555;
+  }
+
+  &__small {
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+    color: #555555;
+  }
+}
+
+.border-container {
+  display: flex;
+  margin: 40px 0;
+  flex-direction: column;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    margin: 20px 0;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #528413;
+    margin-bottom: 15px;
+  }
+}
+
+.border-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 279px;
+  grid-column-gap: 10px;
+  border: 1px solid #9d9d9d;
+  border-radius: 5px;
+  padding: 20px;
+  padding-top: 30px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    grid-template-columns:  1fr;
+    grid-template-rows: auto;
+    border: none;
+    grid-row-gap: 30px;
+    padding: 0;
+  }
+
+}
+
+.border-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 40px);
+  grid-row-gap: 30px;
+}
+
+.border-block {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 15px;
+  }
+
+  &__delivery {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #528413;
+
+  }
+
+  &__span {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #d12c30;
+  }
+}
+
+.border-box {
+  height: 100%;
+
+  &__text {
+    font-weight: 400;
+    color: #555555;
+    font-size: 12px;
+    padding-left: 15px;
+  }
+
+
+}
+
+.border-item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 100%;
+
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__text {
+    padding-left: 15px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #555555;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &--border {
+      border-left: 1px solid #9d9d9d;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.border-text {
+  display: grid;
+  grid-row-gap: 25px;
+  border: 1px solid #9d9d9d;
+  border-radius: 5px;
+  padding: 20px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    padding: 0;
+    border: none;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555555;
+  }
+
+  &__span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #528413;
+  }
+}
+
+.cashback-bg {
+  background-color: #528413;
+  width: 100%;
+}
+
+.cashback-wrapper {
+  padding: 40px 0;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fffffe;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 850px;
+    color: #ffffff;
+  }
+}
+
+.organization-bg {
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.organization-wrapper {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #528413;
+  }
+}
+
+.organization-block {
+  display: grid;
+  grid-row-gap: 20px;
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555555;
+
+  }
+
+  &__span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #528413;
+  }
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
